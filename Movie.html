@@ -1,8 +1,8 @@
 <html>
 <!- - 
 Program Name:   Seminole Movie Connection
-Author: 
-Date: 
+Author: Miguel Mendoza
+Date: 7-28-16
 Filename:   Movie.html
 - ->
 <head>
@@ -52,6 +52,44 @@ Filename:   Movie.html
             <h3 class="list-group-item-heading">Release Date:</h3>
             <p class="list-group-item-text lead text-primary" id="Released">  </p>
         </a> 
+        
+         <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Year:</h3>
+            <p class="list-group-item-text lead text-primary" id="Year">  </p>
+        </a> 
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Runtime:</h3>
+            <p class="list-group-item-text lead text-primary" id="Runtime">  </p>
+        </a>
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Language:</h3>
+            <p class="list-group-item-text lead text-primary" id="Language">  </p>
+        </a>
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Genre:</h3>
+            <p class="list-group-item-text lead text-primary" id="Genre">  </p>
+        </a>
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Awards:</h3>
+            <p class="list-group-item-text lead text-primary" id="Awards">  </p>
+        </a>
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Metascore:</h3>
+            <p class="list-group-item-text lead text-primary" id="Metascore">  </p>
+        </a>
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Country:</h3>
+            <p class="list-group-item-text lead text-primary" id="Country">  </p>
+        </a>
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Director:</h3>
+            <p class="list-group-item-text lead text-primary" id="Director">  </p>
+        </a>
 
     </div>
 </div> 
@@ -70,6 +108,14 @@ Filename:   Movie.html
                      $('#Actors').html(json.Actors);
                      $('#Plot').html(json.Plot);
                      $('#Released').html(json.Released);
+                     $('#Year').html(json.Year);
+                     $('#Runtime').html(json.Runtime);
+                     $('#Language').html(json.Language);
+                     $('#Genre').html(json.Genre);
+                     $('#Awards').html(json.Awards);
+                     $('#Metascore').html(json.Metascore);
+                     $('#Country').html(json.Country);
+                     $('#Director').html(json.Director);
                 })
                 .fail(function() {
                       alert("Posting failed.");              
